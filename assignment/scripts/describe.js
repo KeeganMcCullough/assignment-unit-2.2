@@ -26,11 +26,11 @@ if (number >= 2) {
 
 
 // 1. WRITE YOUR DESCRIPTION HERE
-// 
-// 
-//
-//
-//
+// We make a variable called name and set it to a string 'Dane'.
+// We check name; if it's a string 'Mary', we console. log 'Hi, Mary!'
+// Otherwise, we console log 'How do you do?'
+// name is === 'Dane' right now, so we enter the else.
+// We console log 'How do you do?'
 //
 //
 
@@ -48,10 +48,13 @@ if (name === 'Mary') {
 */
 
 // 2. WRITE YOUR DESCRIPTION HERE
-// 
-// 
-// 
-//
+// We declare a null variable secret
+// We declare a variable code and set it to the number 123
+// We check if code === 123, and if it does, we set secret to 'super', and then double code
+// code does === 123, so we set secret to 'super' and double code, making it === 246
+//we then check if code is greater than 250, and if it is, we set secret to 'duper'
+//code is 246, which is less than 250. We pass the if statement.
+// we console.log secret, which is 'super'
 
 //CODE
 /*
@@ -73,10 +76,17 @@ console.log(secret)
 */
 
 // 3. WRITE YOUR DESCRIPTION HERE
-// 
-// 
-// 
-//
+// we declare a boolean isStudent and set it to true
+// we declare a variable age and set it to the number 34
+// we declare a variable zip and set it to the number 55407
+//we check if isStudent is a boolean with value true , and if  zip is greater than 80,000
+//if so, we console log `You're a student on the West Coast!`
+//if not, we then check if isStudent is a boolean with value false, or if  age < 30
+//if so, we console log 'What are your hobbies'
+//if not, we then check if isStudent is a boolean with value true
+//if so, we console log 'Welcome to Prime!'
+//if not, we console log 'How about the weather?'
+//we are a student, but our zip code is < 80000 and our age is > 30, so we pass to the second else if, and console log 'Welcome to Prime!'
 
 //CODE
 /*
@@ -135,10 +145,18 @@ if (number >= 2) {
 /*
 let colorOne = 'red';
 let colorTwo = 'blue';
+
+//FIX - colorOne and colorTwo are improperly initialized. 
+//should be let colorOne = 'blue', and let colorTwo = 'red'
+
 let mix = true;
 
 if (mix === true) {
   colorOne = 'purple';
+
+  //FIX - colorTwo is not set to purple.
+  //Should be colorOne = 'purple'; colorTwo = 'purple';
+
 }
 */
 
@@ -151,6 +169,10 @@ let temp = 40;
 const time = 4;
 
 if (temp > 39 || time >= 4) {
+
+//FIX - wrong comparison symbol is used.
+//should be if(temp > 39 && time >= 4)
+
   console.log('throw away the food!');
 }
 */
@@ -165,6 +187,14 @@ const minAge = 21;
 
 if(minAge <= age) {
   console.log('no entry');
+
+  //FIX - this code gives no entry to people >= to 21, and lets in under 21. It also doesn't match the description's style.
+  //should be if(age >= minAge){
+                console.log('enter');
+              } else {
+               console.log('no entry');
+              }
+               
 } else {
   console.log('enter');
 }
