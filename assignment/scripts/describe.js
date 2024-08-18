@@ -48,7 +48,7 @@ if (name === 'Mary') {
 */
 
 // 2. WRITE YOUR DESCRIPTION HERE
-// We declare a null variable secret
+// We declare an empty variable secret
 // We declare a variable code and set it to the number 123
 // We check if code === 123, and if it does, we set secret to 'super', and then double code
 // code does === 123, so we set secret to 'super' and double code, making it === 246
@@ -194,7 +194,7 @@ if(minAge <= age) {
               } else {
                console.log('no entry');
               }
-               
+  //if i have my logic correct, this properly allows people above or = to the minimum age in, and denies entry to those under the min age
 } else {
   console.log('enter');
 }
